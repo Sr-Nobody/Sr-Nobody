@@ -21,28 +21,28 @@
 
 ```typescript
 class AsechG implements TechStack {
-  code: string[] = ["TypeScript", "Java", "Python"];
-  architecture: string[] = ["MicroServices"];
+  code: string[] = ['TypeScript', 'Java', 'Python'];
+  architecture: string[] = ['MicroServices'];
 
-  backendTech: { [key: string]: Backend } = {
+  backendTech: { [key: string[]]: Backend } = {
     JAVA: {
-      frameworks: ["Spring"],
-      buildTools: ["Gradle"],
-      configFiles: ["YML", "XML"],
-      documentation: ["JavaDoc", "Swagger"],
+      frameworks: ['Spring'],
+      buildTools: ['Gradle'],
+      configFiles: ['YML', 'XML'],
+      documentation: ['JavaDoc', 'Swagger'],
     },
   };
 
-  frontendTech: { [key: string]: Frontend } = {
+  frontendTech: { [key: string[]]: Frontend } = {
     TYPESCRIPT: {
-      frameworks: ["React"],
-      buildTools: ["Vite", "Node.js"],
+      frameworks: ['React'],
+      buildTools: ['Vite', 'Node.js'],
     },
   };
 
-  databases: { [key: string]: DataBases } = {
-    SQL: ["MySQL", "PostgreSQL"],
-    NOSQL: ["MongoDB"],
+  databases: { [key: string[]]: DataBases } = {
+    SQL: ['MySQL', 'PostgreSQL'],
+    NOSQL: ['MongoDB'],
   };
 }
 ```
